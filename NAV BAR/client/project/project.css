@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px 10px;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+}
+
+.nav-bar .logo {
+    height: 56px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar ul li a {
+    padding: 2px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-bar ul li a.active {
+    color: #0073FF;
+}
+
+.nav-bar ul li a:hover {
+    color: #DB0404;
+}
+
+.talk-btn {
+    background: #DB0404;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+}
+
+.talk-btn:hover {
+    transform: scale(1.1);
+    background: #0bd9ba;
+}
+
+
+/* body content */
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-style: italic;
+    color: whitesmoke;
+    background: linear-gradient(90deg, #FF4545 0%, #FFEE32 100%);
+    text-align: center;
+    height: auto;
+}
+/* Group frames*/
+
+
+.card-container {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  margin: left 0;
+    padding: 50px;
+
+    position: absolute;
+    width: 259px;
+    height: 523px;
+    /* left:%; */
+    top: 25%;
+}
+
+.card {
+    width: 288px;
+    height: 500px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.96);
+    box-shadow: 4px 4px 2px #000;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image */
+.image {
+    position: absolute;
+    width: 239px;
+    height: 239px;
+    left: 56px;
+    top: 210px;
+    /* background: url(8.jpg) no-repeat center/cover; */
+    border-radius: 36px;
+}
+
+/* Vector */
+.locationvector .bangalore {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 4px;
+}
+
+
+
+/* Bangalore Text */
+
+.bangalore {
+   
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+/* Frame 12 (Vector Icons) */
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 16px;
+    width: 15px;
+    height: 14px;
+    left: 45%;
+    top: 4%;
+    
+}
+
+/* Description Text */
+
+.description {
+    position: relative;
+    width: 230px;
+    height: 72px;
+    left: 36px;
+    top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #000;
+}
+
+/* Detail Button */
+.detail {
+    position: relative;
+    width: 106px;
+    height: 35px;
+    left: 25%;
+    top:12%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: rgb(255, 0, 0);
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+}
