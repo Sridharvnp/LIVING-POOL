@@ -9,7 +9,7 @@ body {
 /* Navbar */
 .nav-bar {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     padding: 2px 10px;
     border-bottom: 1px solid #000;
@@ -61,7 +61,7 @@ body {
 
 /* About Section */
 .about {
-    padding:24px;
+    padding: 24px;
 }
 
 .about h1 {
@@ -86,9 +86,58 @@ body {
     color: white;
     padding: 10px 16px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+    animation: bounce-top 1.5s both
+}
+
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1
+    }
+
+    24% {
+        opacity: 1
+    }
+
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in
+    }
+
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in
+    }
+
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in
+    }
+
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1
+    }
 }
 
 .see-more:hover {
@@ -126,18 +175,39 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(-50px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .fade-in {

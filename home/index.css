@@ -53,7 +53,7 @@ body {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out,  0.3s ease-in-out;
 }
 
 .talk-btn:hover {
@@ -79,7 +79,21 @@ body {
     /* Full width of the viewport */
     margin: 0;
     /* Removes default margins */
+
+    animation: bg-pan-tl 8s both
 }
+
+
+@keyframes bg-pan-tl {
+    0% {
+        background-position: 100% 100%
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
 
 /* Sidebar */
 .sidebar {
@@ -116,7 +130,7 @@ body {
     height: 720px;
     background: #FFFFFF;
     text-align: center;
-    
+
 
 }
 
@@ -133,6 +147,7 @@ body {
     font-size: 60px;
     line-height: 52px;
     color: #FFFFFF;
+    animation: text-shadow-pop-top .6s both
 }
 
 .subtitle {
@@ -146,6 +161,20 @@ body {
     font-size: 40px;
     line-height: 52px;
     color: #FFFFFF;
+    animation: text-shadow-pop-top .14s both
+}
+
+
+@keyframes text-shadow-pop-top {
+    0% {
+        text-shadow: 0 0 #ffd20b, 0 0 #555, 0 0 #555, 0 0 #ffea00, 0 0 #555, 0 0 #555, 0 0 #555, 0 0 #555;
+        transform: translateY(0)
+    }
+
+    100% {
+        text-shadow: 0 -1px #ffea02, 0 -2px #555, 0 -3px #555, 0 -4px #555, 0 -5px #ffb700, 0 -6px #b92828, 0 -7px #ff9900, 0 -8px #ef1d1d;
+        transform: translateY(8px)
+    }
 }
 
 .trends-text {
@@ -159,6 +188,24 @@ body {
     font-size: 56px;
     line-height: 73px;
     color: #FFEE32;
+
+    animation: tracking-in-expand 1.5s cubic-bezier(.215, .61, .355, 1.000) both
+}
+
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 .border {
@@ -205,7 +252,7 @@ body {
     left: calc(50% - 551px/2 - 0.5px);
     top: 400px;
     border-radius: 8px;
-  
+
 }
 
 .quote-btn {
@@ -272,7 +319,8 @@ body {
     left: 460px;
     top: 480px;
 }
-.renovate-link{
+
+.renovate-link {
     font-size: 16px;
     color: rgb(255, 217, 0);
     font-family: 'Gelasio';
@@ -286,3 +334,4 @@ body {
     left: 360px;
     top: 540px;
 }
+
