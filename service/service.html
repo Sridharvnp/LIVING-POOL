@@ -2,117 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - LivingPool</title>
-    <link rel="stylesheet" href="service.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - LivingPool</title>
+  <link rel="stylesheet" href="service.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <div class="nav-bar">
-            <img src="icon/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="D:\PROJECT\LP CODE\NAV BAR - Copy\home\index.html">HOME</a></li>
-                    <li><a href="D:\PROJECT\LP CODE\NAV BAR - Copy\about\about.html">ABOUT US</a></li>
-                    <li><a href="service.html" class="active">SERVICE</a></li>
-                    <li><a href="D:\PROJECT\LP CODE\NAV BAR - Copy\blog\blog.html">BLOG</a></li>
-                    <li><a href="D:\PROJECT\LP CODE\NAV BAR - Copy\project\prooject.html">PROJECT</a></li>
-                </ul>
-            </nav>
-            <button class="talk-btn">Let's Talk</button>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="nav-bar">
+      <img src="icon/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="/home/index.html">HOME</a></li>
+          <li><a href="/about/about.html">ABOUT US</a></li>
+          <li><a href="/service/service.html" class="active">SERVICE</a></li>
+          <li><a href="/blog/blog.html">BLOG</a></li>
+          <li><a href="/project/prooject.html">PROJECT</a></li>
+        </ul>
+      </nav>
+      <button class="talk-btn">Let's Talk</button>
+    </div>
+  </header>
 
-    <!-- Main Service Section -->
-    <section class="services">
+  <!-- Main Service Section -->
+  <section class="services">
 
-        <!-- Customer Reviews -->
-        <div class="reviews">
-            <h2>Customer Reviews</h2>
-            <div class="review">
-                <div class="profile-pic">
-                    <img src="icon/p1.png" alt="">
-                    <h3 class="name">Arun K</h3>
-                </div>
+    <!-- Our Services -->
+    <div class="our-services" data-aos="fade-up">
+      <h2>OUR SERVICES</h2>
+      <h1>We Bring Aesthetic Home Styles</h1>
+      <p>Our team of designers, architects, and visionaries thrive on turning ordinary floors into extraordinary escapes.
+        Whether you dream of a cozy conversation pit, a luxurious lounge, or a bold architectural statement, we make it
+        happen seamlessly, beautifully, and uniquely you.</p>
 
-                <p>Our sunken living room turned out better than we imagined. The craftsmanship, attention to detail,
-                    and unique design set our home apart!</p>
-            </div>
-            <div class="review">
-                <div class="profile-pic">
-                    <img src="icon/p1.png" alt="">
-                    <h3 class="name">Raju Bai</h3>
-                </div>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <div class="icon"><img src="icon/fb.png" alt="Facebook" /></div>
+        <div class="icon"><img src="icon/google.png" alt="Google" /></div>
+        <div class="icon"><img src="icon/inst.png" alt="Instagram" /></div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="choose-us" data-aos="fade-up">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li><img src="icon/Group-2.png" alt="✓" /> Luxury Within Budget!</li>
+        <li><img src="icon/Group-2.png" alt="✓" /> Worth Every Rupee</li>
+        <li><img src="icon/Group-2.png" alt="✓" /> Affordable & Elegant</li>
+        <li><img src="icon/Group-2.png" alt="✓" /> Smart Investment!</li>
+        <li><img src="icon/Group-2.png" alt="✓" /> No Hidden Costs</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Extra Services Section -->
+  <section class="extra-services" data-aos="fade-up">
+    <h2>Additional Services</h2>
+    <div class="service-boxes">
+      <div class="service-card" data-aos="fade-right">
+        <h3>Custom Sunken Seating</h3>
+        <p>Tailored seating pits for comfort, conversation, and character.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up">
+        <h3>Integrated Lighting</h3>
+        <p>Elegant lighting solutions to enhance your architectural elements.</p>
+      </div>
+      <div class="service-card" data-aos="fade-left">
+        <h3>Smart Home Integration</h3>
+        <p>Seamless tech that brings intelligence and ease to your lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
-                <p>We wanted a cozy yet stylish space, and they delivered exactly that. The team was professional, and
-                    the execution was flawless!</p>
-            </div>
-            <div class="review">
-                <div class="profile-pic">
-                    <img src="icon/p1.png" alt="">
-                    <h3 class="name">Priya M</h3>
-                </div>
+
+<!-- Branch Section -->
+<div class="branches fadeInUp">
+  <h2>Our Design Branches</h2>
+  <p>Explore our unique design approaches tailored for different styles and spaces.</p>
+
+  <div class="branch-cards">
+    <div class="branch-card">
+      <img src="icon/modern.jpg" alt="Modern Living" />
+      <h3>Modern Living</h3>
+      <p>Sleek lines, minimalist vibes, and bold functionality that define 21st-century homes.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="./icon/charm.jpg" alt="Classic Charm" />
+      <h3>Classic Charm</h3>
+      <p>Traditional elegance with a timeless conversation pit at the heart of your home.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="./icon/Eco-friendly l.jpg" alt="Eco-Friendly" />
+      <h3>Eco-Friendly</h3>
+      <p>Designed with sustainability in mind — smart, green, and stylishly sunken.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Branch Section - City Locations -->
+<div class="branches fadeInUp">
+  <h2>Our Branches Across India</h2>
+  <p>We're building beautiful spaces in every corner of the country.</p>
+
+  <div class="branch-cards">
+    <div class="branch-card">
+      <img src="./icon/mumbai.png" alt="Mumbai" />
+      <h3>Mumbai</h3>
+      <p>Our flagship studio where luxurious sunken pits meet oceanic vibes.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="./icon/delhi.png" alt="Delhi" />
+      <h3>Delhi</h3>
+      <p>Inspired by Mughal architecture, fusing grandeur with minimal elegance.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="./icon/bangalore.jpg" alt="Bangalore" />
+      <h3>Bangalore</h3>
+      <p>Smart designs for smart homes — driven by innovation and tech lifestyle.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="icon/jaipur.png" alt="Jaipur" />
+      <h3>Jaipur</h3>
+      <p>Traditional motifs blended with contemporary pit-living concepts.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="icon/hyderabad.png" alt="Hyderabad" />
+      <h3>Hyderabad</h3>
+      <p>Stonework and storytelling — our layouts reflect Deccan luxury.</p>
+    </div>
+
+    <div class="branch-card">
+      <img src="icon/kochi.png" alt="Kochi" />
+      <h3>Kochi</h3>
+      <p>Natural light, ventilation, and serenity define our Kerala-inspired pits.</p>
+    </div>
+  </div>
+</div>
 
 
-                <p>The attention to detail and quality were beyond our expectations. Highly recommend their services for
-                    a unique home touch.</p>
-            </div>
-        </div>
-
-        <!-- Our Services -->
-
-
-        <div class="our-services">
-            <h2>OUR SERVICES</h2>
-            <h1>We Bring Aesthetic Home Styles</h3>
-                <p>Our team of designers, architects, and visionaries thrive on turning ordinary floors into
-                    extraordinary escapes. Whether you dream of a cozy conversation pit, a luxurious lounge, or a bold
-                    architectural statement, we make it happen seamlessly, beautifully, and uniquely you. Let’s sink
-                    into innovation together.</p>
-
-
-                <!-- Social Media  -->
-
-                <div class="social-icons">
-                    <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\fb.png" alt="Google"></div>
-                    <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\inst.png" alt="Google"></div>
-                    <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\x.png" alt="Google"></div>
-                    <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\google.png" alt="Google"></div>
-                </div>
 
 
 
-        </div>
 
-        <!-- Why Choose Us -->
-        <div class="choose-us">
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\Group-1.png" alt=""> Luxury Within Budget!</li>
-                <li><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\Group-1.png" alt=""> Worth Every Rupee</li>
-                <li><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\Group-1.png" alt=""> Affordable & Elegant</li>
-                <li><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\Group-1.png" alt=""> Smart Investment!</li>
-                <li><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\Group-1.png" alt=""> No Hidden Costs</li>
-            </ul>
-        </div>
-        </div>
 
-    </section>
 
-    Social Media
 
-    <!-- <div class="social-icons">
-        <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\fb.png" alt="Google"></div>
-        <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\inst.png" alt="Google"></div>
-        <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\x.png" alt="Google"></div>
-        <div class="icon"><img src="D:\PROJECT\LP CODE\NAV BAR\service\icon\google.png" alt="Google"></div>
-    </div> -->
 
 
 </body>

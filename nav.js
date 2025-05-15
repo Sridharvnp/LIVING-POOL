@@ -1,19 +1,3 @@
-// Navigation Links
-document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll("#nav-list a");
-
-  navLinks.forEach(link => {
-      link.addEventListener("click", function (event) {
-          event.preventDefault();
-          const target = this.getAttribute("data-path");
-          if (target) {
-              window.location.href = target;
-          }
-      });
-  });
-});
-
-
 // slider.js
 let currentSlide = 0;
 
