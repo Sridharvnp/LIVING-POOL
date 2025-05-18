@@ -4,37 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Living Pool</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="../Navbarstyle.css" media="max-width: 768px" />
   </head>
 
   <body>
-    <header>
-      <div class="nav-bar">
-        <img src="logo.png" alt="Logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="/home/index.html" class="active">HOME</a></li>
-            <li><a href="/about/about.html">ABOUT US</a></li>
-            <li><a href="/service/service.html">SERVICE</a></li>
-            <li><a href="/blog/blog.html">BLOG</a></li>
-            <li><a href="/project/prooject.html">PROJECT</a></li>
-          </ul>
-        </nav>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
 
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/home/index.html" class="active">HOME</a></li>
+        <li><a href="/about/about.html">ABOUT US</a></li>
+        <li><a href="/service/service.html">SERVICE</a></li>
+        <li><a href="/blog/blog.html">BLOG</a></li>
+        <li><a href="/project/prooject.html">PROJECT</a></li>
+      </ul>
+
+      <div>
         <button class="talk-btn">Let's Talk</button>
       </div>
-    </header>
+    </nav>
 
-   
+
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuList = document.querySelector(".nav-links");
+
+    menu.addEventListener("click", () => {
+      menuList.classList.toggle("showmenu");
+    });
+
+    // Optional: close nav on link click (mobile)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (menuList.classList.contains("showmenu")) {
+          menuList.classList.remove("showmenu");
+        }
+      });
+    });
+  </script>
 
     <section id="banner">
-      <h1>Welcome to Sunken Conversation Pit</h1>
-      <p>
-        An architectural experience blending comfort, design, and conversation.
-      </p>
+      <div class="bg">
+        <img src="BG img.png" alt="" />
+      </div>
+      <div class="border">
+        <div class="rectangle-1"></div>
+        <div class="rectangle-2"></div>
+      </div>
+      <h1 class="title">In 1970's Model</h1>
+      <h2 class="subtitle">Conversation Pit</h2>
+      <div class="trends-text">Trends come and Go !....</div>
+      <div class="ancient-text">
+        But our ancient architectural enhance our lifestyle
+      </div>
+      <div class="btns">
+        <button class="quote-btn">Get a Quote</button>
+        <button class="services-btn">Our Services</button>
+      </div>
+
+      <a href="#" class="renovate-link">Are you ready ?</a>
+      <h1 id="renovateremain">to renovate your old Ideas</h1>
     </section>
 
     <section id="one" class="wrapper">
+      <h1>Welcome to Sunken Conversation Pit</h1>
+
       <div class="inner">
         <div class="flex">
           <article>
@@ -76,8 +119,7 @@
       </div>
     </section>
 
- <section class="hero">
-      <div class="bg"><img src="BG img.png" alt="" /></div>
+    <section class="hero">
       <div class="sidebar">
         <div class="social-icons">
           <a href="#" class="icon"
@@ -94,30 +136,6 @@
           /></a>
         </div>
       </div>
-
-      <div class="border">
-        <div class="rectangle-1"></div>
-        <div class="rectangle-2"></div>
-      </div>
-
-      <h1 class="title">In 1970's Model</h1>
-      <h2 class="subtitle">Conversation Pit</h2>
-      <div class="trends-text">Trends come and Go !....</div>
-
-      <button class="quote-btn">Get a Quote</button>
-      <button class="services-btn">Our Services</button>
-
-      <p class="ancient-text">
-        But our ancient architectural enhance our lifestyle
-      </p>
-      <a href="#" class="renovate-link"
-        >Are you ready ?</a
-      >
-      <h1 id="renovateremain">to renovate your old Ideas</h1>
     </section>
-
-
-
-
   </body>
 </html>

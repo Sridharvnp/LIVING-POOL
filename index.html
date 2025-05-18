@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIVING POOL</title>
     <link rel="stylesheet" href="mainstyle.css" />
-    <script src="nav.js" defer></script>
-    <script src="slider.js" defer></script>
+    <script src="Main.js" defer></script>
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <img src="Images\logo.png" alt="Logo" />
-      </div>
-      
+    <div class="logo">
+      <img src="Images\logo.png" alt="Logo" />
+    </div>
 
-    <!-- ..........................Hero Section -->
+    <!-- ..........................Hero Section----------------->
     <header class="hero">
       <div class="hero-text">
         <h1>Welcome to Living Pool</h1>
@@ -25,14 +22,14 @@
       </div>
 
       <div class="buttonalign">
-        <button id="bt1" onclick="location.href='about/about.html'">
+        <button id="bt1" onclick="location.href='home/index.html'">
           Learn More
         </button>
         <button id="bt2" onclick="location.href='service/service.html'">
           Our Services
         </button>
       </div>
-
+    </header>
       <!-- Image Slider Section -->
       <section class="slider">
         <div class="slider-container">
@@ -52,6 +49,5 @@
           <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
       </section>
-    </header>
   </body>
 </html>

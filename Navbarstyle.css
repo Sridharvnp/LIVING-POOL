@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-bar ul li a.active {
+  color: #0073ff;
+}
+
+.nav-bar ul li a:hover {
+  color: #db0404;
+}
+
+
+
+.talk-btn {
+  background: #db0404;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+    transition: transform 0.3s ease-in-out, 0.3s ease-in-out;
+
+}
+
+.talk-btn:hover {
+  transform: scale(1.1);
+  background: #0bd9ba;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  
+  .menu {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .nav-links.showmenu {
+    display: flex;
+  }
+
+  .talk-btn {
+    display: none;
+  }
+}

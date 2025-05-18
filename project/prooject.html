@@ -9,24 +9,56 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="Navbarstyle.css" media="max-width: 768px" />
   </head>
 
   <body>
-    <header>
-      <div class="nav-bar">
-        <img src="./img/logo.png" alt="Logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="/home/index.html">HOME</a></li>
-            <li><a href="/about/about.html">ABOUT US</a></li>
-            <li><a href="/service/service.html">SERVICE</a></li>
-            <li><a href="/blog/blog.html">BLOG</a></li>
-            <li><a href="/project/prooject.html" class="active">PROJECT</a></li>
-          </ul>
-        </nav>
-        <button class="talk-btn">Let's Talk</button>
+
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./img/logo.png" alt="Logo" />
       </div>
 
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/home/index.html">HOME</a></li>
+        <li><a href="/about/about.html">ABOUT US</a></li>
+        <li><a href="/service/service.html">SERVICE</a></li>
+        <li><a href="/blog/blog.html">BLOG</a></li>
+        <li><a href="/project/prooject.html" class="active">PROJECT</a></li>
+      </ul>
+
+      <div>
+        <button class="talk-btn">Let's Talk</button>
+      </div>
+    </nav>
+
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuList = document.querySelector(".nav-links");
+
+    menu.addEventListener("click", () => {
+      menuList.classList.toggle("showmenu");
+    });
+
+    // Optional: close nav on link click (mobile)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (menuList.classList.contains("showmenu")) {
+          menuList.classList.remove("showmenu");
+        }
+      });
+    });
+  </script>
+
+
+
+    <div class="container">
       <h1>Explore our projects <br />until your Satisfaction!</h1>
 
       <div class="card-container">
@@ -206,6 +238,6 @@
           </p>
         </div>
       </div>
-    </header>
+    </div>
   </body>
 </html>

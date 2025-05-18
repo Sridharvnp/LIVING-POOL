@@ -8,27 +8,54 @@
   <link rel="stylesheet" href="service.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Navbarstyle.css" media="max-width: 768px">
 </head>
 
 <body>
+<nav class="nav-bar">
+  <div class="logo">
+    <img src="./icon/logo.png" alt="Logo" />
+  </div>
 
-  <!-- Navigation Bar -->
-  <header>
-    <div class="nav-bar">
-      <img src="icon/logo.png" alt="Logo" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="/home/index.html">HOME</a></li>
-          <li><a href="/about/about.html">ABOUT US</a></li>
-          <li><a href="/service/service.html" class="active">SERVICE</a></li>
-          <li><a href="/blog/blog.html">BLOG</a></li>
-          <li><a href="/project/prooject.html">PROJECT</a></li>
-        </ul>
-      </nav>
-      <button class="talk-btn">Let's Talk</button>
-    </div>
-  </header>
+  <div class="menu">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+  </div>
 
+  <ul class="nav-links">
+    <li><a href="/home/index.html" >HOME</a></li>
+    <li><a href="/about/about.html">ABOUT US</a></li>
+    <li><a href="/service/service.html"  class="active">SERVICE</a></li>
+    <li><a href="/blog/blog.html">BLOG</a></li>
+    <li><a href="/project/prooject.html">PROJECT</a></li>
+  </ul>
+
+  <div>
+    <button class="talk-btn">Let's Talk</button>
+  </div>
+</nav>
+
+
+
+  
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuList = document.querySelector(".nav-links");
+
+    menu.addEventListener("click", () => {
+      menuList.classList.toggle("showmenu");
+    });
+
+    // Optional: close nav on link click (mobile)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (menuList.classList.contains("showmenu")) {
+          menuList.classList.remove("showmenu");
+        }
+      });
+    });
+  </script>
   <!-- Main Service Section -->
   <section class="services">
 
@@ -158,16 +185,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

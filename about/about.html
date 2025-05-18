@@ -9,24 +9,64 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="about.css" />
+     <link rel="stylesheet" href="../Navbarstyle.css" media="max-width: 768px" />
   </head>
   <body>
-    <header>
-      <div class="nav-bar">
-        <img src="logo.png" alt="Logo" class="logo" />
-        <nav>
-          <ul>
-            <li><a href="/home/index.html" >HOME</a></li>
-            <li><a href="/about/about.html" class="active">ABOUT US</a></li>
-            <li><a href="/service/service.html">SERVICE</a></li>
-            <li><a href="/blog/blog.html">BLOG</a></li>
-            <li><a href="/project/prooject.html">PROJECT</a></li>
-          </ul>
-        </nav>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/home/index.html">HOME</a></li>
+        <li><a href="/about/about.html"class="active">ABOUT US</a></li>
+        <li><a href="/service/service.html">SERVICE</a></li>
+        <li><a href="/blog/blog.html">BLOG</a></li>
+        <li><a href="/project/prooject.html">PROJECT</a></li>
+      </ul>
+
+      <div>
         <button class="talk-btn">Let's Talk</button>
       </div>
-    </header>
+    </nav>
+    
+  <script>
+    const menu = document.querySelector(".menu");
+    const menuList = document.querySelector(".nav-links");
+
+    menu.addEventListener("click", () => {
+      menuList.classList.toggle("showmenu");
+    });
+
+    // Optional: close nav on link click (mobile)
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (menuList.classList.contains("showmenu")) {
+          menuList.classList.remove("showmenu");
+        }
+      });
+    });
+  </script>
     <main>
+      <section class="experience fade-in">
+        <div class="triangle"></div>
+        <div class="experience-content">
+          <h2>10+</h2>
+          <p>years of experience</p>
+          <p>Save your money with Us!</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="fade-in">
+        It’s an experience of <strong>warmth and togetherness.</strong>
+      </p>
       <section class="about">
         <h1 class="fade-in">Who <span style="color: red">We Are ?</span></h1>
         <p class="slide-in">
@@ -34,7 +74,7 @@
           a uniform floor level.
         </p>
         <p class="slide-in">
-          The conversation pit was popular from the 1950s to the 1970s, seen
+          Once a mid-century icon, the conversation pit is making a stylish return
           across Europe as well as North America.
         </p>
         <p class="italic slide-in">
@@ -43,18 +83,6 @@
         </p>
         <button class="see-more btn-animate">See More -></button>
       </section>
-      <section class="experience fade-in">
-        <div class="triangle"></div>
-        <div class="experience-content">
-          <h2>10+</h2>
-          <p>years of experience</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p class="fade-in">
-        It’s an experience of <strong>warmth and togetherness.</strong>
-      </p>
     </footer>
   </body>
 </html>
